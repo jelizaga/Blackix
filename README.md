@@ -2,9 +2,9 @@
 
 Blackix is a modified version of the renown [Numix](https://numixproject.org/store/index.php?route=product/product&product_id=52) theme. Features:
 
-- All black everything; what was once #2d2d2d in Numix is now #000000.
+- [All black everything](http://i.imgur.com/41BibVn.png); what was once #2d2d2d in Numix is now #000000.
 - Highlights and links are now gray instead of light red.
-- Window decoration won't turn red on scroll-over or click.
+- [Window decoration](http://i.imgur.com/JmN5PAs.png) won't turn red on scroll-over or click.
   - close == red
   - expand == green
   - hide == yellow
