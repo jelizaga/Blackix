@@ -1,6 +1,6 @@
 # Numix GTK Theme
 
-gtk-color-scheme = "bg_color:#dedede\nfg_color:#555555\nbase_color:#f9f9f9\ntext_color:#333333\nselected_bg_color:#383838\nselected_fg_color:#f9f9f9\ntooltip_bg_color:#000000\ntooltip_fg_color:#dedede\ntitlebar_bg_color:#000000\ntitlebar_fg_color:#dcdcdc\nmenubar_bg_color:#000000\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#000000\nmenu_fg_color:#dcdcdc\npanel_bg_color:#000000\npanel_fg_color:#dcdcdc\nlink_color:#383838"
+gtk-color-scheme = "bg_color:#dedede\nfg_color:#555555\nbase_color:#f9f9f9\ntext_color:#333333\nselected_bg_color:#fb4d06\nselected_fg_color:#f9f9f9\ntooltip_bg_color:#000000\ntooltip_fg_color:#dedede\ntitlebar_bg_color:#000000\ntitlebar_fg_color:#dcdcdc\nmenubar_bg_color:#000000\nmenubar_fg_color:#dcdcdc\ntoolbar_bg_color:#dedede\ntoolbar_fg_color:#555555\nmenu_bg_color:#000000\nmenu_fg_color:#dcdcdc\npanel_bg_color:#000000\npanel_fg_color:#dcdcdc\nlink_color:#fb4d06"
 
 # Default Style
 
@@ -426,14 +426,18 @@ class "GtkHandleBox" style "murrine-toolbar"
 widget_class "*Toolbar*.*Separator*" style "murrine-toolbar"
 
 # Panels
+# selected_bg_color = red
 
 style "murrine-panel" = "murrine-thin" {
+
+	font_name = "Bold"
+
 	xthickness = 2
 
 	bg[NORMAL] = @panel_bg_color
-	bg[PRELIGHT] =  mix (0.21, @panel_fg_color, @panel_bg_color)
+	bg[PRELIGHT] = @selected_bg_color # mix (0.21, @panel_fg_color, @panel_bg_color)
 	bg[SELECTED] =  mix (0.21, @panel_fg_color, @panel_bg_color)
-	bg[ACTIVE] = shade (0.8, @panel_bg_color)
+	bg[ACTIVE] = mix (0.21, @panel_fg_color, @panel_bg_color) #shade (0.8, @panel_bg_color)
 	bg[INSENSITIVE] = @panel_bg_color
 
 	fg[NORMAL] = @panel_fg_color

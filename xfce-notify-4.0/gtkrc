@@ -2,16 +2,16 @@ style "notify-window" {
     XfceNotifyWindow::summary-bold = 1
     XfceNotifyWindow::border-color = "#000000"
     XfceNotifyWindow::border-color-hover = "#333333"
-    XfceNotifyWindow::border-radius = 2.0
-    XfceNotifyWindow::border-width = 1.0
-    XfceNotifyWindow::border-width-hover = 1.0
+    XfceNotifyWindow::border-radius = 0.0
+    XfceNotifyWindow::border-width = 0.0
+    XfceNotifyWindow::border-width-hover = 0.0
 
     bg[NORMAL] = "#111111"
 }
 
 style "notify-button" {
     bg[NORMAL] = "#000000"
-    bg[PRELIGHT] = "#333333"
+    bg[PRELIGHT] = "#000000"
     bg[ACTIVE] = "#000000"
 
     fg[NORMAL] = "#dcdcdc"
@@ -27,7 +27,7 @@ style "notify-button" {
 }
 
 style "notify-text" {
-    GtkWidget::link-color = "#d64937"
+    GtkWidget::link-color = "#fb4d06"
 
     fg[NORMAL] = "#f9f9f9"
     fg[PRELIGHT] = "#f9f9f9"
